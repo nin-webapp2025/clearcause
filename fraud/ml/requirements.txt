@@ -1,0 +1,7 @@
+numpy
+pandas
+scikit-learn>=1.5
+joblib
+flask>=3
+gunicorn>=23
+matplotlib

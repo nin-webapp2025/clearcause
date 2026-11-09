@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" role="img" aria-labelledby="title description">
+  <title id="title">Campaign image unavailable</title>
+  <desc id="description">ClearCause placeholder shown when a campaign has no valid image.</desc>
+  <rect width="800" height="450" fill="#f1f5f9"/>
+  <path d="M0 370 190 210l125 108 110-92 200 144Z" fill="#cbd5e1"/>
+  <circle cx="620" cy="125" r="48" fill="#94a3b8"/>
+</svg>

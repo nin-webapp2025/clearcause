@@ -1,0 +1,25 @@
+{
+  "feature_names": [
+    "n_donations",
+    "n_unique_donors",
+    "repeat_ratio",
+    "raised_ratio",
+    "top_donor_share",
+    "max_single_ratio",
+    "cv_amount",
+    "top_amount_repeat_share",
+    "first_hour_share",
+    "max_burst",
+    "interval_cv",
+    "payout_differs",
+    "payout_shared_owners",
+    "owner_campaign_count",
+    "owner_burst",
+    "payout_burst",
+    "self_donation_share"
+  ],
+  "raw_lo": 0.4159769176772764,
+  "raw_hi": 0.6376819981588703,
+  "threshold": 0.6888,
+  "sklearn": "1.9.1"
+}

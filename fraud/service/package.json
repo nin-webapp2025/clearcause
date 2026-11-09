@@ -1,0 +1,20 @@
+{
+  "name": "charity-fraud-service",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Fraud detection for the transparent charity DApp: rule engine, feature extraction, chain sync and REST API",
+  "scripts": {
+    "test": "node --test \"test/*.test.js\"",
+    "test:ml": "python ../ml/test_serve.py",
+    "test:all": "npm test && npm run test:ml",
+    "start": "node src/server.js",
+    "features": "node src/cli.js features"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "ethers": "^6.13.5",
+    "express": "^4.21.2",
+    "pg": "^8.13.1"
+  }
+}

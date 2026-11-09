@@ -1,0 +1,240 @@
+{
+  "threshold": 0.5949,
+  "validation_f1_ml": 0.765,
+  "splits": {
+    "validation": {
+      "n": 403,
+      "n_fraud": 103,
+      "rules": {
+        "precision": 1.0,
+        "recall": 0.301,
+        "f1": 0.4627,
+        "false_positive_rate": 0.0,
+        "auc_roc": 0.8769,
+        "avg_precision": 0.6924,
+        "tp": 31,
+        "fp": 0,
+        "fn": 72,
+        "tn": 300
+      },
+      "ml": {
+        "precision": 0.875,
+        "recall": 0.6796,
+        "f1": 0.765,
+        "false_positive_rate": 0.0333,
+        "auc_roc": 0.902,
+        "avg_precision": 0.8149,
+        "tp": 70,
+        "fp": 10,
+        "fn": 33,
+        "tn": 290
+      },
+      "combined": {
+        "precision": 0.8864,
+        "recall": 0.7573,
+        "f1": 0.8168,
+        "false_positive_rate": 0.0333,
+        "auc_roc": 0.9411,
+        "avg_precision": 0.8421,
+        "tp": 78,
+        "fp": 10,
+        "fn": 25,
+        "tn": 290
+      },
+      "recall_by_type": {
+        "burst": {
+          "n": 10,
+          "rules": 1.0,
+          "ml": 1.0,
+          "combined": 1.0
+        },
+        "self_donation": {
+          "n": 10,
+          "rules": 1.0,
+          "ml": 0.2,
+          "combined": 1.0
+        },
+        "serial_campaigns": {
+          "n": 46,
+          "rules": 0.022,
+          "ml": 0.957,
+          "combined": 0.957
+        },
+        "shared_payout": {
+          "n": 27,
+          "rules": 0.0,
+          "ml": 0.148,
+          "combined": 0.148
+        },
+        "structuring": {
+          "n": 10,
+          "rules": 1.0,
+          "ml": 1.0,
+          "combined": 1.0
+        }
+      }
+    },
+    "test_standard": {
+      "n": 402,
+      "n_fraud": 101,
+      "rules": {
+        "precision": 0.9677,
+        "recall": 0.297,
+        "f1": 0.4545,
+        "false_positive_rate": 0.0033,
+        "auc_roc": 0.8747,
+        "avg_precision": 0.6725,
+        "tp": 30,
+        "fp": 1,
+        "fn": 71,
+        "tn": 300
+      },
+      "ml": {
+        "precision": 0.8333,
+        "recall": 0.6436,
+        "f1": 0.7263,
+        "false_positive_rate": 0.0432,
+        "auc_roc": 0.9149,
+        "avg_precision": 0.8153,
+        "tp": 65,
+        "fp": 13,
+        "fn": 36,
+        "tn": 288
+      },
+      "combined": {
+        "precision": 0.8471,
+        "recall": 0.7129,
+        "f1": 0.7742,
+        "false_positive_rate": 0.0432,
+        "auc_roc": 0.9375,
+        "avg_precision": 0.825,
+        "tp": 72,
+        "fp": 13,
+        "fn": 29,
+        "tn": 288
+      },
+      "recall_by_type": {
+        "burst": {
+          "n": 10,
+          "rules": 1.0,
+          "ml": 1.0,
+          "combined": 1.0
+        },
+        "self_donation": {
+          "n": 10,
+          "rules": 1.0,
+          "ml": 0.3,
+          "combined": 1.0
+        },
+        "serial_campaigns": {
+          "n": 40,
+          "rules": 0.0,
+          "ml": 0.95,
+          "combined": 0.95
+        },
+        "shared_payout": {
+          "n": 31,
+          "rules": 0.0,
+          "ml": 0.129,
+          "combined": 0.129
+        },
+        "structuring": {
+          "n": 10,
+          "rules": 1.0,
+          "ml": 1.0,
+          "combined": 1.0
+        }
+      }
+    },
+    "test_hard": {
+      "n": 396,
+      "n_fraud": 96,
+      "rules": {
+        "precision": 0.381,
+        "recall": 0.0833,
+        "f1": 0.1368,
+        "false_positive_rate": 0.0433,
+        "auc_roc": 0.7918,
+        "avg_precision": 0.4782,
+        "tp": 8,
+        "fp": 13,
+        "fn": 88,
+        "tn": 287
+      },
+      "ml": {
+        "precision": 0.2326,
+        "recall": 0.625,
+        "f1": 0.339,
+        "false_positive_rate": 0.66,
+        "auc_roc": 0.4951,
+        "avg_precision": 0.2514,
+        "tp": 60,
+        "fp": 198,
+        "fn": 36,
+        "tn": 102
+      },
+      "combined": {
+        "precision": 0.2317,
+        "recall": 0.625,
+        "f1": 0.338,
+        "false_positive_rate": 0.6633,
+        "auc_roc": 0.5123,
+        "avg_precision": 0.2611,
+        "tp": 60,
+        "fp": 199,
+        "fn": 36,
+        "tn": 101
+      },
+      "recall_by_type": {
+        "burst": {
+          "n": 10,
+          "rules": 0.0,
+          "ml": 1.0,
+          "combined": 1.0
+        },
+        "self_donation": {
+          "n": 10,
+          "rules": 0.0,
+          "ml": 0.2,
+          "combined": 0.2
+        },
+        "serial_campaigns": {
+          "n": 40,
+          "rules": 0.025,
+          "ml": 0.925,
+          "combined": 0.925
+        },
+        "shared_payout": {
+          "n": 26,
+          "rules": 0.0,
+          "ml": 0.038,
+          "combined": 0.038
+        },
+        "structuring": {
+          "n": 10,
+          "rules": 0.7,
+          "ml": 1.0,
+          "combined": 1.0
+        }
+      }
+    }
+  },
+  "feature_importance_auc_drop": {
+    "payout_shared_owners": 0.0303,
+    "raised_ratio": 0.0204,
+    "top_amount_repeat_share": 0.0178,
+    "payout_differs": 0.0133,
+    "repeat_ratio": 0.0117,
+    "max_single_ratio": 0.0088,
+    "cv_amount": 0.0068,
+    "top_donor_share": 0.0059,
+    "first_hour_share": 0.003,
+    "max_burst": 0.0029,
+    "n_donations": 0.0018,
+    "owner_campaign_count": 0.0,
+    "owner_burst": 0.0,
+    "self_donation_share": 0.0,
+    "n_unique_donors": -0.001,
+    "interval_cv": -0.0014
+  }
+}

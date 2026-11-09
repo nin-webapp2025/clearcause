@@ -1,0 +1,126 @@
+{
+  "gasPriceGwei": 10,
+  "ethUsd": 3000,
+  "rows": [
+    {
+      "action": "Deploy KYCManager",
+      "contract": "KYCManager",
+      "gas": 967860,
+      "note": "one-time"
+    },
+    {
+      "action": "Deploy ClearCause",
+      "contract": "ClearCause",
+      "gas": 5428213,
+      "note": "one-time"
+    },
+    {
+      "action": "Submit KYC",
+      "contract": "KYCManager",
+      "gas": 210893,
+      "note": ""
+    },
+    {
+      "action": "Verify KYC (admin)",
+      "contract": "KYCManager",
+      "gas": 53495,
+      "note": ""
+    },
+    {
+      "action": "Create campaign (2 milestones)",
+      "contract": "ClearCause",
+      "gas": 366226,
+      "note": "starts Pending"
+    },
+    {
+      "action": "Set payout address",
+      "contract": "ClearCause",
+      "gas": 55633,
+      "note": ""
+    },
+    {
+      "action": "Approve campaign (admin)",
+      "contract": "ClearCause",
+      "gas": 83582,
+      "note": ""
+    },
+    {
+      "action": "Create campaign (no milestones)",
+      "contract": "ClearCause",
+      "gas": 252885,
+      "note": ""
+    },
+    {
+      "action": "Reject campaign (admin)",
+      "contract": "ClearCause",
+      "gas": 39577,
+      "note": ""
+    },
+    {
+      "action": "Donate (first donation to a campaign)",
+      "contract": "ClearCause",
+      "gas": 496659,
+      "note": "mints receipt NFT"
+    },
+    {
+      "action": "Donate (same donor, second time)",
+      "contract": "ClearCause",
+      "gas": 366409,
+      "note": "donor already has stats"
+    },
+    {
+      "action": "Donate (new donor, campaign has 2 donations)",
+      "contract": "ClearCause",
+      "gas": 470859,
+      "note": ""
+    },
+    {
+      "action": "Donate (repeat donor, campaign already has 24 donations)",
+      "contract": "ClearCause",
+      "gas": 366311,
+      "note": "scaling check: should stay flat"
+    },
+    {
+      "action": "Donate (repeat donor, campaign already has 49 donations)",
+      "contract": "ClearCause",
+      "gas": 366311,
+      "note": "scaling check: should stay flat"
+    },
+    {
+      "action": "Donate (repeat donor, campaign already has 99 donations)",
+      "contract": "ClearCause",
+      "gas": 366311,
+      "note": "scaling check: should stay flat"
+    },
+    {
+      "action": "Withdraw funds (successful campaign)",
+      "contract": "ClearCause",
+      "gas": 75350,
+      "note": "pays the approved payout address"
+    },
+    {
+      "action": "Suspend campaign (admin)",
+      "contract": "ClearCause",
+      "gas": 54103,
+      "note": "opens refunds"
+    },
+    {
+      "action": "Claim refund",
+      "contract": "ClearCause",
+      "gas": 64653,
+      "note": ""
+    },
+    {
+      "action": "Check campaign status (marks Failed)",
+      "contract": "ClearCause",
+      "gas": 56746,
+      "note": ""
+    },
+    {
+      "action": "Create milestone-adjustment proposal",
+      "contract": "ClearCause",
+      "gas": 327536,
+      "note": "needs KYC"
+    }
+  ]
+}
